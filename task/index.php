@@ -11,6 +11,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <style>
         .form-container {
             max-width: 100%;
@@ -33,7 +37,7 @@
 
 <body>
     <div class="form-container">
-
+<h2>REGISTRATION FORM</h2>
 
 
         <nav>
@@ -49,18 +53,10 @@
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
-
-        </div>
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
 
-
-
-
-        <h2>Registration Form</h2>
-
-        <form id="registrationForm" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  onsubmit="return validateForm()">
+            <form id="registrationForm" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  onsubmit="return validateForm()">
             <!-- Row 1 -->
             <div class="form-row">
                 <div class="form-group col-md-4">
@@ -172,7 +168,7 @@
                 </div>
                 <div class="form-group col-md-4">
                     <label for="experience">Experience</label>
-                    <input type="text" class="form-control" id="experience" placeholder="Experience">
+                    <input type="text" class="form-control" id="experience" placeholder="Experience in years">
                 </div>
             </div>
             <!-- ROW 5 -->
@@ -199,6 +195,19 @@
                 </div>
             </div>
         </form>
+
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+
+        </div>
+
+
+
+
+
+        
+
+        
     </div>
 
  <!-- <script src="script.js"></script> -->
